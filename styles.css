@@ -1,0 +1,216 @@
+/* Color scheme:
+
+Darkest blue: #334257 or rgb(51, 66, 87)
+Dark blue: #476072 or rgb(71, 96, 114)
+Blue: #548CA8 or rgb(84, 140, 168)
+Light blue: #EEEEEE or rgb(238, 238, 238) 
+ */
+
+:root {
+  --darkest-blue: #334257;
+  --medium-blue: #476072;
+  --blue: #548ca8;
+  --light-blue: #eee;
+}
+/*************************************************** Body ***************************************************/
+html,
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  overflow-x: hidden;
+  font-family: var(--bs-font-sans-serif);
+}
+.container-fluid {
+  padding: 3% 15%;
+}
+
+h2 {
+  padding: 2rem 5rem 0;
+  color: var(--medium-blue);
+}
+
+.bluebg-whitetxt {
+  color: var(--light-blue);
+  background-color: var(--medium-blue);
+}
+/*************************************************** Nav Bar ***************************************************/
+
+.nav-bg {
+  background-color: rgba(238, 238, 238, 0.9);
+}
+.nav-link {
+  color: var(--medium-blue);
+}
+.nav-link:visited {
+  color: var(--medium-blue);
+}
+.nav-link:hover {
+  color: var(--darkest-blue);
+}
+.navbar-brand {
+  padding-left: 1rem;
+  color: var(--darkest-blue);
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+.navbar-brand:hover {
+  color: var(--medium-blue);
+}
+.navbar ul {
+  padding-right: 1rem;
+}
+.custom-toggler.navbar-toggler {
+  border-color: var(--daskest-blue);
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(51, 66, 87)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.bg {
+  height: 100vh;
+  background: url("images/resort.png") no-repeat center;
+  /* background: url("https://images.unsplash.com/photo-1596436889106-be35e843f974?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80")
+    no-repeat center; */
+  background-size: cover;
+}
+
+/*************************************************** Amenities ***************************************************/
+
+#amenities {
+  background-color: var(--light-blue);
+  text-align: left;
+}
+.amenities-item {
+  padding: 2rem;
+  color: var(--darkest-blue);
+  word-spacing: 2px;
+  text-align: center;
+}
+
+.amenities-icon {
+  color: white;
+  margin-bottom: 1rem;
+}
+.amenities-icon-line {
+  font-size: 1rem;
+}
+.circle-icon {
+  background: var(--medium-blue);
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+/*************************************************** Rooms ***************************************************/
+
+#rooms {
+  text-align: left;
+  text-align: left;
+}
+.room-img {
+  padding: 0;
+}
+
+.room-item {
+  padding: 1% 15% 4%;
+}
+.standard-room-img {
+  height: 100%;
+  width: 100%;
+}
+.room-disc {
+  padding: 2rem;
+  font-family: "Merriweather", serif;
+}
+.room-name {
+  font-size: 2.5rem;
+  margin-bottom: 0;
+  display: inline-block;
+}
+.para,
+.room-features {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+}
+.room-features {
+  padding-top: 1rem;
+}
+.rooms-btn {
+  background-color: var(--light-blue);
+  color: var(--darkest-blue);
+}
+
+@media only screen and (max-width: 800px) {
+  #rooms .deluxe-row {
+    display: flex;
+    flex-flow: column-reverse;
+  }
+}
+/*************************************************** Testimonals ***************************************************/
+#testimonals {
+  margin-top: 3rem;
+  text-align: left;
+}
+#testimonals h2 {
+  color: var(--light-blue);
+}
+.test-img {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 100%;
+}
+.carousel-inner {
+  height: 20rem;
+  overflow: hidden;
+  text-align: center;
+}
+.carousel-item h4 {
+  padding-top: 1rem;
+}
+.carousel-text {
+  font-size: 1.5rem;
+  font-weight: normal;
+  padding-bottom: 2rem;
+}
+
+/*************************************************** Location ***************************************************/
+#location {
+  text-align: left;
+}
+.map {
+  padding-bottom: 40%;
+  position: relative;
+}
+.map iframe {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/*************************************************** Footer ***************************************************/
+
+#footer {
+  background-color: var(--darkest-blue);
+  color: var(--light-blue);
+  padding: 1rem;
+}
+
+#footer p {
+  margin: 0;
+  padding-top: 1rem;
+  font-size: 0.8rem;
+  color: var(--medium-blue);
+}
+
+#footer h2 {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  color: var(--light-blue);
+}
+
+.footer-icon {
+  padding: 0.7rem;
+  color: var(--light-blue);
+}

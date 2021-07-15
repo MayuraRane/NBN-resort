@@ -62,6 +62,7 @@ h2 {
 }
 .custom-toggler.navbar-toggler {
   border-color: var(--daskest-blue);
+  margin-right: 1rem;
 }
 .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(51, 66, 87)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
@@ -105,7 +106,6 @@ h2 {
 
 #rooms {
   text-align: left;
-  text-align: left;
 }
 .room-img {
   padding: 0;
@@ -140,12 +140,6 @@ h2 {
   color: var(--darkest-blue);
 }
 
-@media only screen and (max-width: 800px) {
-  #rooms .deluxe-row {
-    display: flex;
-    flex-flow: column-reverse;
-  }
-}
 /*************************************************** Testimonals ***************************************************/
 #testimonals {
   margin-top: 3rem;
@@ -213,4 +207,32 @@ h2 {
 .footer-icon {
   padding: 0.7rem;
   color: var(--light-blue);
+}
+
+/* ------------------------------ */
+@media only screen and (max-width: 800px) {
+  #rooms .deluxe-row {
+    display: flex;
+    flex-flow: column-reverse;
+  }
+  .room-features {
+    text-align: left;
+  }
+  #amenities,
+  #rooms,
+  #testimonals,
+  #location {
+    text-align: center;
+  }
+
+  .map {
+    padding-bottom: 70%;
+    position: relative;
+  }
+
+  .carousel-text {
+    font-size: 1rem;
+    font-weight: normal;
+    padding-bottom: 2rem;
+  }
 }

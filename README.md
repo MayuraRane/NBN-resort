@@ -1,5 +1,7 @@
 # NBN Resort
 
+![Home Page](design/homePage.png)
+
 ## Table of contents
 
 - [Overview](#overview)
